@@ -1,0 +1,21 @@
+Mouse Button Tester
+===================
+A simple desktop tool for testing mouse buttons and measuring double-click timing.
+
+Requirements
+------------
+Python 3.x
+
+Linux (tkinter is not always bundled):
+  sudo apt install python3-tk        # Debian/Ubuntu
+  sudo dnf install python3-tkinter   # Fedora/RHEL
+  sudo pacman -S tk                  # Arch
+
+Windows/macOS: tkinter is bundled with Python by default.
+
+Usage
+-----
+1. Run: python mouse_double_click_test.py
+2. Set the double-click threshold (10–1000 ms): any two clicks within this interval are counted as a double-click.
+3. Click anywhere inside the box to register clicks.
+4. Use "Reset stats" to clear the counters, or "Clear log" to clear the event log.
